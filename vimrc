@@ -18,6 +18,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'Vimjas/vim-python-pep8-indent'
+Plugin 'ctrlpvim/ctrlp.vim' 
 
 call vundle#end()
 filetype plugin indent on
