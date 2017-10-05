@@ -19,9 +19,13 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'Vimjas/vim-python-pep8-indent'
 Plugin 'ctrlpvim/ctrlp.vim' 
+Plugin 'davidhalter/jedi-vim'
 
 call vundle#end()
 filetype plugin indent on
+
+" disable jedi-vim complition
+let g:jedi#completions_enabled = 0
 
 let python_highlight_all = 1
 
