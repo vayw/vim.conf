@@ -20,6 +20,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'Vimjas/vim-python-pep8-indent'
 Plugin 'ctrlpvim/ctrlp.vim' 
 Plugin 'davidhalter/jedi-vim'
+Plugin 'lmeijvogel/vim-yaml-helper'
+Plugin 'taku-o/vim-toggle'
 
 call vundle#end()
 filetype plugin indent on
