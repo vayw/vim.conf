@@ -21,7 +21,7 @@ Plugin 'Vimjas/vim-python-pep8-indent'
 Plugin 'ctrlpvim/ctrlp.vim' 
 Plugin 'davidhalter/jedi-vim'
 Plugin 'lmeijvogel/vim-yaml-helper'
-Plugin 'taku-o/vim-toggle'
+Plugin 'vayw/toggle-bool'
 
 call vundle#end()
 filetype plugin indent on
@@ -33,6 +33,9 @@ let python_highlight_all = 1
 
 " NERDtree shortcut
 map <C-n> :NERDTreeToggle<CR>
+
+" yaml helper shortcut
+nnoremap <F3> :YamlGoToKey<Space>
 
 set t_Co=256
 
