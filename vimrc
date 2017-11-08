@@ -20,7 +20,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'Vimjas/vim-python-pep8-indent'
 Plugin 'ctrlpvim/ctrlp.vim' 
 Plugin 'davidhalter/jedi-vim'
-Plugin 'lmeijvogel/vim-yaml-helper'
+Plugin 'kpron/vim-yaml-helper'
 Plugin 'vayw/toggle-bool'
 
 call vundle#end()
