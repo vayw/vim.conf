@@ -16,12 +16,14 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-python/python-syntax'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
+Plugin 'fatih/vim-go'
 Plugin 'Vimjas/vim-python-pep8-indent'
-Plugin 'ctrlpvim/ctrlp.vim' 
+"Plugin 'ctrlpvim/ctrlp.vim' 
 Plugin 'davidhalter/jedi-vim'
 Plugin 'kpron/vim-yaml-helper'
 Plugin 'vayw/toggle-bool'
+Plugin 'junegunn/fzf.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -49,6 +51,8 @@ set novisualbell
 
 " toogle-bool bind
 noremap <leader>t :ToggleBool<CR>
+" call FuzzyFinder
+noremap <C-P> :FZF<CR>
 
 " bind Space to reset last search highlightning
 nnoremap <Space> :noh<return>
@@ -60,3 +64,19 @@ if &term =~ '^screen'
     execute "set <xRight>=\e[1;*C"
     execute "set <xLeft>=\e[1;*D"
 endif
+
+" GO
+" use goimports for formatting
+let g:go_fmt_command = "goimports"
+
+" turn highlighting on
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
+let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
+
+" Open go doc in vertical window, horizontal, or tab
+au Filetype go nnoremap <leader>v :vsp <CR>:exe "GoDef" <CR>
