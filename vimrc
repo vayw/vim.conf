@@ -24,6 +24,8 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'kpron/vim-yaml-helper'
 Plugin 'vayw/toggle-bool'
 Plugin 'junegunn/fzf.vim'
+Plugin 'tpope/vim-sleuth'
+Plugin 'airblade/vim-gitgutter'
 
 call vundle#end()
 filetype plugin indent on
