@@ -1,4 +1,5 @@
 set nocompatible
+set clipboard=unnamed
 syntax on
 "filetype plugin on
 
@@ -19,13 +20,14 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 "Plugin 'Valloric/YouCompleteMe'
 Plugin 'fatih/vim-go'
 Plugin 'Vimjas/vim-python-pep8-indent'
-"Plugin 'ctrlpvim/ctrlp.vim' 
 Plugin 'davidhalter/jedi-vim'
 Plugin 'kpron/vim-yaml-helper'
-Plugin 'vayw/toggle-bool'
+Plugin 'vayw/vim-logic-toggle'
 Plugin 'junegunn/fzf.vim'
 Plugin 'tpope/vim-sleuth'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
+Plugin 'bronson/vim-trailing-whitespace'
 
 call vundle#end()
 filetype plugin indent on
@@ -43,16 +45,16 @@ nnoremap <F3> :YamlGoToKey<Space>
 
 set t_Co=256
 
-vmap <C-C> "+yi
-imap <C-V> "+gPi
+"vmap <C-C> "+yi
+"imap <C-V> "+gPi
 
 set mousehide
 set termencoding=utf-8
 
 set novisualbell
 
-" toogle-bool bind
-noremap <leader>t :ToggleBool<CR>
+" logic-toogle bind
+ noremap <leader>t :LogicToggle<CR>
 " call FuzzyFinder
 noremap <C-P> :FZF<CR>
 
