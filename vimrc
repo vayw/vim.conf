@@ -54,7 +54,7 @@ set termencoding=utf-8
 set novisualbell
 
 " logic-toogle bind
- noremap <leader>t :LogicToggle<CR>
+ noremap <leader>t :LogicToggle()<CR>
 " call FuzzyFinder
 noremap <C-P> :FZF<CR>
 
